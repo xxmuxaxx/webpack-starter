@@ -112,11 +112,7 @@ $input-padding: 1em 1.25em;
 $input-padding-sm: 0.75em 1em;
 $input-bg-color: $white;
 $input-margin: 5px;
-$input-focus: 0 0 20px
-  rgba(
-    $color: $black,
-    $alpha: 0.4,
-  );
+$input-focus: 0 0 20px rgba($black, 0.4);
 
 // textarea
 $textarea-padding: 1em 1.25em;

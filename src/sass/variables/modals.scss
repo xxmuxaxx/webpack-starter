@@ -21,6 +21,7 @@
   @media (max-width: 768px) {
     padding: 15px;
   }
+
   &::before {
     display: inline-block;
     height: 100%;
@@ -31,11 +32,13 @@
   &.active {
     visibility: visible;
     opacity: 1;
+
     .modal {
       opacity: 1;
       transform: scale(1);
     }
   }
+
   .modal {
     position: relative;
     z-index: 11;
@@ -59,15 +62,19 @@
     @media (max-width: 768px) {
       padding: 30px 15px;
     }
+
     &--small {
       max-width: 480px;
     }
+
     &--medium {
       max-width: 540px;
     }
+
     &--large {
       max-width: 740px;
     }
+    
     &--no-padding {
       padding-right: 0;
       padding-left: 0;

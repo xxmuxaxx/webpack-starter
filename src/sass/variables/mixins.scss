@@ -13,6 +13,20 @@
   }
 }
 
+@mixin text-gradient($gradient) {
+  background: $gradient;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin line-clamp($lines: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+}
+
 @mixin max-width($media) {
   @media (max-width: $media) {
     @content;
@@ -50,9 +64,6 @@
 }
 
 @mixin scrollbar($width, $color-thumb, $color-track, $border-radius) {
-  // height: 100%;
-  // overflow-x: hidden;
-
   &::-webkit-scrollbar {
     width: $width;
   }
