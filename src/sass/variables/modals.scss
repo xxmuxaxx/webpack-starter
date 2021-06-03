@@ -16,7 +16,9 @@
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  transition: opacity 0.3s, visibility 0.4s;
+  transition-property: visibility, opacity;
+  transition-duration: $transition-duration * 2;
+  transition-timing-function: $transition-timing-function;
 
   @media (max-width: 768px) {
     padding: 15px;
@@ -52,8 +54,10 @@
     vertical-align: middle;
     background-color: #fff;
     opacity: 0;
-    transition: opacity 0.4s, transform 0.4s;
     transform: scale(0.6);
+    transition-property: transform, opacity;
+    transition-duration: $transition-duration * 2;
+    transition-timing-function: $transition-timing-function;
 
     @media (max-width: 992px) {
       padding: 30px 20px;
@@ -74,7 +78,7 @@
     &--large {
       max-width: 740px;
     }
-    
+
     &--no-padding {
       padding-right: 0;
       padding-left: 0;

@@ -93,7 +93,7 @@ $button-border-radius: 6px;
 $button-padding: 1.25em 1.75em;
 $button-padding-sm: 1em 1.25em;
 $button-min-width: 220px;
-$button-margin: 5px;
+$button-margin: 0;
 
 $button-small-min-width: initial;
 $button-small-padding: 0.625em 1.25em;
@@ -111,14 +111,14 @@ $input-border-radius: 6px;
 $input-padding: 1em 1.25em;
 $input-padding-sm: 0.75em 1em;
 $input-bg-color: $white;
-$input-margin: 5px;
+$input-margin: 0;
 $input-focus: 0 0 20px rgba($black, 0.4);
 
 // textarea
 $textarea-padding: 1em 1.25em;
 $textarea-padding-sm: 0.75em 1em;
 $textarea-height: 200px;
-$textarea-margin: 5px;
+$textarea-margin: 0;
 
 // checkbox
 $checkbox-font: $arial;
@@ -136,15 +136,19 @@ $checkbox-size: 24px;
 $checkbox-icon-size: 14px;
 $checkbox-border: 1px solid transparent;
 $checkbox-border-radius: 4px;
-$checkbox-margin: 5px 0;
+$checkbox-margin: 0;
 $checkbox-custom-margin: 0 0.935em 0 0;
 
 // radio
 $radio-size: 20px;
 $radio-border-radius: 50%;
-$radio-margin: 5px 0;
+$radio-margin: 0;
 $radio-custom-margin: 0 0.935em 0 0;
 $radio-bg-color: $white;
 $radio-bg-color-active: $white;
 $radio-icon-size: 12px;
 $radio-icon-bg-color: $red;
+
+// Transition
+$transition-duration: 0.3s;
+$transition-timing-function: ease;
